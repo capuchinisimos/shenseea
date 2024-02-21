@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convertisseur de Devises</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Convertisseur de Devises</h1>
+        <form action="/convertir" method="get">
+            <div class="form-group">
+                <label for="montant">Montant</label>
+                <input type="number" class="form-control" id="montant" name="montant" required>
+            </div>
+            <div class="form-group">
+                <label for="devise_source">Devise Source</label>
+                <input type="text" class="form-control" id="devise_source" name="devise_source" required>
+            </div>
+            <div class="form-group">
+                <label for="devise_cible">Devise Cible</label>
+                <input type="text" class="form-control" id="devise_cible" name="devise_cible" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Convertir</button>
+        </form>
+    </div>
+</body>
+</html>
